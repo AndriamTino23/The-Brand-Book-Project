@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans";
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url(../img/Vector.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-position-y: 15vh;
+}
+/****************************CONNEXION*******************************/
+.container {
+  background-color: #202224;
+  display: flex;
+  align-items: center;
+  height: 90%;
+  flex-direction: column;
+  color: #ffffff;
+  border-radius: 24px;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.container form {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  height: 100%;
+  margin: 50px;
+  padding: 15px;
+  gap: 25px;
+}
+
+.container form .input {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  border-radius: 8px;
+  border: none;
+  padding: 10px;
+}
+
+/****************************INSCRIPTION*******************************/
+.container1 {
+  background-color: #202224;
+  display: flex;
+  align-items: center;
+  height: 90%;
+  flex-direction: column;
+  color: #ffffff;
+  border-radius: 24px;
+}
+
+.container1 form {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  height: 100%;
+  margin: 50px;
+  padding: 15px;
+  gap: 25px;
+}
+
+.container1 form .input {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  border-radius: 8px;
+  border: none;
+  padding: 10px;
+}
+
+/***********************************************************/
+
+input[type="password"]::placeholder {
+  font-size: 25px;
+}
+
+input[type="password"] {
+  font-size: 25px;
+  letter-spacing: 5px;
+}
+form .pfp {
+  display: flex;
+  justify-content: space-between;
+}
+
+p {
+  font-size: 17px;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  font-size: 32px bold;
+}
+
+.forget {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.forget:hover {
+  color: #3d42df;
+}
+
+.styled-checkbox {
+  display: none;
+}
+
+.checkbox-label {
+  position: relative;
+  padding-left: 25px;
+  cursor: pointer;
+}
+
+.checkbox-label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  border: 1px solid #a3a3a3;
+  border-radius: 3px;
+  background-color: #202224;
+}
+
+.styled-checkbox:checked + .checkbox-label::before {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  content: "🗸";
+}
+
+.styled-checkbox:checked + .checkbox-label::before::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.signin {
+  height: 40px;
+  border-radius: 8px;
+  border: none;
+  background-color: #585df7;
+  width: 320px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.signin:hover {
+  background-color: #3d42df;
+}
+
+.signup {
+  height: 40px;
+  border-radius: 8px;
+  border: none;
+  background: linear-gradient(to left, #ee5445, #f56ecf);
+  width: 320px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.signup a {
+  text-decoration: none;
+  color: #202224;
+  font-weight: 700;
+  font-size: medium;
+}
+
+.signup:hover {
+  background: linear-gradient(to left, #ef3826, #ff5dd1);
+  transition: -5s;
+}
+.signin {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: medium;
+}
+
+.signing-link a {
+  color: #5055e3;
+}
+
+.signup-link a {
+  color: #ffd56d;
+}
+
+.visible {
+  visibility: hidden;
+  transition: visibility 0s, opacity 0.5s ease-in-out;
+}
+
+@media only screen and (max-width: 1024px) {
+  .main {
+    background-size: auto;
+    background-position: center;
+    background-position-y: 0;
+  }
+
+  .container {
+    width: 80%;
+    margin: 20px;
+    border-radius: 16px;
+  }
+
+  .container form {
+    margin: 20px 10px;
+    padding: 10px;
+    gap: 20px;
+  }
+
+  .container form .input {
+    height: 35px;
+    border-radius: 6px;
+    padding: 8px;
+  }
+
+  .signin {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
+/************************************************************/
+@media only screen and (max-width: 1024px) {
+  .container1 {
+    width: 90%;
+    margin: 20px;
+    border-radius: 16px;
+  }
+
+  .container1 form {
+    margin: 20px 10px;
+    padding: 10px;
+    gap: 20px;
+  }
+
+  .container1 form .input {
+    height: 35px;
+    border-radius: 6px;
+    padding: 8px;
+  }
+
+  .signup {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
