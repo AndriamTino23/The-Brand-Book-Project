@@ -1,0 +1,25 @@
+button {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  line-height: normal;
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+
+.apply-now-btn {
+  background-color: 
+  #4880FF;
+  padding: 10px 30px;
+  color:#ffffff;
+  border-radius: 5px;
+  font-weight: 300;
+  width: 150px;
+}

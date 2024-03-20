@@ -11,10 +11,10 @@ export function Login() {
 
   /**RECUPERATION DES DONNEES ENTREES */
   const [data, setData] = useState("");
-  function onSubmit(data) {
+  const onSubmit = (data) => {
     console.log(data);
     setData(JSON.stringify(data));
-  }
+  };
 
   const [mode, setMode] = useState("container");
   const toggleMode = () => {
@@ -85,7 +85,7 @@ export function Login() {
                 Remember Password
               </label>
               <button className="signin" type="submit">
-                Sign In
+                Login
               </button>
               <div className="signing-link">
                 <p>
@@ -122,12 +122,19 @@ export function Login() {
               )}
               <label htmlFor="username">Username: </label>
               <input
+                {...register("username", {
+                  required: true,
+                  maxLength: 30,
+                })}
                 className="input"
                 type="text"
                 name="username"
                 id="username"
                 placeholder="Username"
               />
+              {errors.username && errors.username.type === "required" && (
+                <p style={{ color: "red" }}>Username is required</p>
+              )}
               <div className="pfp">
                 <label htmlFor="pwd">Password:</label>
                 <label htmlFor="passwd">

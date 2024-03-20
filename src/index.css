@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito Sans";
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+img {
+  width: 100%;
+}
+
+.menu-id .ant-menu-title-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #a4a4a4;
+}
+.menu-bar {
+  display: flex;
+  flex-direction: column;
+}
+
+span {
+  font-weight: 700;
+}
+
+.header-container {
+  margin-left: 200px;
+  background: #fff;
+  position: fixed;
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  background-color: #fff;
+  width: 100%;
+  height: 50px;
+  text-align: center;
+  gap: 300px;
+}
+
+.nav-left {
+  margin-top: 16px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+}
+.search-icon {
+  display: flex;
+  margin-top: 13px;
+}
+
+.nav-left input {
+  width: 388px;
+  height: 38px;
+  border-radius: 32px;
+  border: 0.6px;
+  background-color: #f5f6fa;
+  padding-left: 30px;
+}
+
+.nav-right {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.nav-right img {
+  margin-top: 19px;
+  width: 24px;
+  height: 25.5px;
+  opacity: 70%;
+}
+.nav-right img:hover {
+  margin-top: 19px;
+  width: 24px;
+  height: 25.5px;
+  opacity: 100%;
+  cursor: pointer;
+}
+.header .select-language {
+  margin-top: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .user {
+  margin-top: 8px;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 20px;
+}
